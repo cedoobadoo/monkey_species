@@ -5,7 +5,7 @@ from keras.layers import (Conv2D, Activation, MaxPooling2D, Dropout, Flatten, De
 def model(num_classes):
     model = Sequential()
     model.add(Conv2D(32, (3, 3), padding='same',
-                     input_shape=(156, 156, 3))
+                     input_shape=(156, 156, 3)))
     model.add(Activation('relu'))
     model.add(Conv2D(32, (3, 3)))
     model.add(Activation('relu'))
